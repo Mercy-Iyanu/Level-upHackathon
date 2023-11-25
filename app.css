@@ -80,3 +80,36 @@ nav {
     color: rgba(0, 0, 0, 0.4);
     margin-right: 1px;
 }
+
+.extend-trial {
+    background-color: #1C181D;
+    margin-top: 15px;
+    margin-left: 10em;
+    width: 800px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.extend-trial p {
+    font-size: 13px;
+    padding-left: 15px;
+    color: rgba(227, 227, 227, 1);
+}
+
+.search-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-plan-button {
+    width: 99px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
