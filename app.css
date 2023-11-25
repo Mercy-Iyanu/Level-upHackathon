@@ -4,6 +4,7 @@ body {
     font-family: 'Inter';
     margin: 0;
     padding: 0;
+    background: #F1F1F1;
 }
 
 nav {
@@ -84,7 +85,7 @@ nav {
 .extend-trial {
     background-color: #1C181D;
     margin-top: 15px;
-    margin-left: 10em;
+    margin-left: 15em;
     width: 800px;
     color: #fff;
     display: flex;
@@ -102,14 +103,120 @@ nav {
 .search-plan {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .search-plan-button {
-    width: 99px;
-    height: 28px;
     border-radius: 6px;
     background-color: #fff;
-    color: #000;
+    color: #323232;
+    box-shadow: 0 -1px #B5B5B5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 12px;
+    padding: 6px, 12px, 6px, 12px;
+    cursor: pointer;
+}
+
+.search-plan svg {
+    top: 0;
+}
+
+main {
+    background-color: #fff;
+    margin-top: 30px;
+    margin-left: 15em;
+    width: 800px;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.setup-guide {
+    padding: 20px;
+}
+
+.setup-guide h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #303030;
+}
+
+.setup-headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10px;
+}
+
+.setup-headline span {
+    cursor: pointer;
+}
+
+.setup-guide p {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 0;
+    color: #303030;
+}
+
+.setup-progression {
+    font-size: 12px;
+    font-weight: 400;
+    color: #303030;
+}
+
+.option-one {
+    background: #F3F3F3;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.option-one-headline {
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+.option-one-headline h6 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #303030;
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
+
+.option-one p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #616161;
+    line-height: 18.2px;
+    padding-left: 31px;
+}
+
+.option-one p a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #005BD3;
+    text-decoration: none;
+}
+
+.customize-theme {
+    border-radius: 6px;
+    background-color: #404040;
+    color: #F6F3F6;
+    margin-left: 31px;
+    box-shadow: 0 -1px #B5B5B5;
+    border-width: 1.5px 1.5px 0px 1.5px;
+    border-style: solid;
+    border-color: #FFFFFF33;
+    box-shadow: 0px 0px 0px 1.5px #333333;
+    box-shadow: 0px 1px 0px 1.5px #333333;
+    box-shadow: 0px 2px 0px 0px #000000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.option-one-right {
+    margin-left: 100px;
 }
