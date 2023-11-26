@@ -163,7 +163,11 @@ main {
     color: #303030;
 }
 
-.option-one {
+.option-one,
+.option-two,
+.option-three,
+.option-four,
+.option-five {
     background: #F3F3F3;
     margin-left: 7px;
     margin-right: 7px;
@@ -172,13 +176,28 @@ main {
     display: flex;
 }
 
-.option-one-headline {
+.option-two,
+.option-three,
+.option-four,
+.option-five {
+    margin-top: 5px;
+}
+
+.option-one-headline,
+.option-two-headline,
+.option-three-headline,
+.option-four-headline,
+.option-five-headline {
     display: flex;
     align-items: center;
     height: 10px;
 }
 
-.option-one-headline h6 {
+.option-one-headline h6,
+.option-two-headline h6,
+.option-three-headline h6,
+.option-four-headline h6,
+.option-five-headline h6 {
     font-size: 13px;
     font-weight: 600;
     color: #303030;
@@ -186,7 +205,11 @@ main {
     padding-bottom: 8px;
 }
 
-.option-one p {
+.option-one p,
+.option-two p,
+.option-three p,
+.option-four p,
+.option-five p {
     font-size: 13px;
     font-weight: 500;
     color: #616161;
@@ -194,14 +217,22 @@ main {
     padding-left: 31px;
 }
 
-.option-one p a {
+.option-one p a,
+.option-two p a,
+.option-three p a,
+.option-four p a,
+.option-five p a {
     font-size: 13px;
     font-weight: 500;
     color: #005BD3;
     text-decoration: none;
 }
 
-.customize-theme {
+.customize-theme,
+.add-product,
+.name-store,
+.add-domain,
+.setup-payment {
     border-radius: 6px;
     background-color: #404040;
     color: #F6F3F6;
@@ -217,6 +248,16 @@ main {
     font-weight: 600;
 }
 
-.option-one-right {
+.option-one-right,
+.option-two-right,
+.option-three-right,
+.option-four-right,
+.option-five-right {
     margin-left: 100px;
+}
+
+.import-product {
+    font-size: 12px;
+    font-weight: 600;
+    color: #323232;
 }
