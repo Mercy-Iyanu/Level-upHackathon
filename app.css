@@ -46,16 +46,32 @@ nav {
 .notifications {
     display: flex;
     margin-right: 10px;
+
 }
 
 .bell-icon {
-    background-color: #333;
+    background-color: #303030;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 32px;
     width: 32px;
     border-radius: 8px;
+    transition: all 300ms;
+}
+
+.bell-icon:hover,
+.user-info:hover,
+.bell-icon:active,
+.user-info:active {
+    background-color: #656266;
+}
+
+.bell-icon:focus,
+.user-info:focus {
+    background-color: #656266;
+    outline: 3px solid #005BD3;
+    outline-offset: 1px;
 }
 
 .user-info {
@@ -68,6 +84,7 @@ nav {
     font-size: 12px;
     width: 142px;
     border-radius: 8px;
+    transition: all 300ms;
 }
 
 .user-intials {
@@ -241,6 +258,8 @@ main {
     border-width: 1.5px 1.5px 0px 1.5px;
     border-style: solid;
     border-color: #FFFFFF33;
+    width: fit-content;
+    height: 26px;
     box-shadow: 0px 0px 0px 1.5px #333333;
     box-shadow: 0px 1px 0px 1.5px #333333;
     box-shadow: 0px 2px 0px 0px #000000;
