@@ -311,11 +311,8 @@ hr {
     display: flex;
 }
 
-.option-two,
-.option-three,
-.option-four,
-.option-five {
-    margin-top: 5px;
+.hide {
+    display: none;
 }
 
 .option-one-headline,
@@ -380,7 +377,6 @@ hr {
     box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000;
     color: #F6F3F6;
     margin-left: 30px;
-
     font-size: 12px;
     font-weight: 600;
 }
@@ -401,6 +397,16 @@ hr {
     font-size: 12px;
     font-weight: 600;
     color: #323232;
+}
+
+.circle-row,
+.circle-checked {
+    display: none;
+}
+
+.circle-dot:focus+span .circle-row,
+.circle-dot:checked+span .circle-checked {
+    display: inline-block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -582,6 +588,16 @@ hr {
         color: #303030;
     }
 
+    .option-one {
+        margin-top: 15px;
+    }
+
+    .option-cards {
+        border: 1px solid var(--stroke-s-50, #DBDBDB);
+        background: var(--White, #FFF);
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+    }
+
     .option-one,
     .option-two,
     .option-three,
@@ -593,13 +609,6 @@ hr {
         padding: 20px;
         border-radius: 10px;
         display: flex;
-    }
-
-    .option-two,
-    .option-three,
-    .option-four,
-    .option-five {
-        margin-top: 5px;
     }
 
     .option-one-headline,
@@ -654,17 +663,16 @@ hr {
     .setup-payment {
         border-radius: 6px;
         background-color: #404040;
+        padding: 6px 12px;
+        align-items: center;
+        border-radius: 6px;
+        border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+        border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+        border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+        background: #404040;
+        box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000;
         color: #F6F3F6;
-        margin-left: 31px;
-        box-shadow: 0 -1px #B5B5B5;
-        border-width: 1.5px 1.5px 0px 1.5px;
-        border-style: solid;
-        border-color: #FFFFFF33;
-        width: 56px;
-        height: 28px;
-        box-shadow: 0px 0px 0px 1.5px #333333;
-        box-shadow: 0px 1px 0px 1.5px #333333;
-        box-shadow: 0px 2px 0px 0px #000000;
+        margin-left: 30px;
         font-size: 12px;
         font-weight: 600;
     }
