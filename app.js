@@ -5,6 +5,12 @@ function dropdownMenu() {
 
 }
 
+function userInfoMenu() {
+    let toggleUserMenu = document.querySelector('.user-info-menu');
+
+    toggleUserMenu.style.display = (toggleUserMenu.style.display === 'none') ? 'block' : 'none';
+}
+
 function redirectToShopifyPricing() {
     window.location.href = '/shopify.com/pricing'
 }
