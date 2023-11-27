@@ -53,9 +53,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 32px;
-    width: 32px;
-    border-radius: 8px;
+    outline: 0px;
+    border: none;
+    background: none;
+
 }
 
 .bell-icon svg {
@@ -66,9 +67,15 @@ nav {
     display: none;
 }
 
+.user-info {
+    background: none;
+    border: none;
+    outline: 0px;
+}
+
 .user-intials {
-    display: flex;
     padding: 9px 5px 10px 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
@@ -116,6 +123,7 @@ nav {
     border: 1px solid var(--stroke-s-50, #DBDBDB);
     background: var(--White, #FFF);
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 16px;
 }
 
 .setup-headline {
@@ -123,6 +131,7 @@ nav {
     align-items: center;
     height: 10px;
     padding-left: 15px;
+    margin-top: 16px;
 }
 
 .setup-headline h6 {
@@ -131,13 +140,24 @@ nav {
     color: #303030;
 }
 
-.setup-headline svg {
-    padding-left: 140px;
+.arrow-up,
+.arrow-down {
+    padding-left: 318px;
     cursor: pointer;
+}
+
+.arrow-down {
+    display: none;
+}
+
+.option-cards {
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
 }
 
 .setup-guide p {
     font-size: 13px;
+    padding-left: 15px;
     font-weight: 400;
     color: #303030;
 }
@@ -146,6 +166,113 @@ nav {
     font-size: 12px;
     font-weight: 400;
     color: #303030;
+    padding-left: 15px;
+    padding-bottom: 16px;
+}
+
+.option-one,
+.option-two,
+.option-three,
+.option-four,
+.option-five {
+    background: #F3F3F3;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.option-two,
+.option-three,
+.option-four,
+.option-five {
+    margin-top: 5px;
+}
+
+.option-one-headline,
+.option-two-headline,
+.option-three-headline,
+.option-four-headline,
+.option-five-headline {
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+.option-one-headline h6,
+.option-two-headline h6,
+.option-three-headline h6,
+.option-four-headline h6,
+.option-five-headline h6 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #303030;
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
+
+.option-one p,
+.option-two p,
+.option-three p,
+.option-four p,
+.option-five p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+    line-height: 18.2px;
+    padding-left: 31px;
+}
+
+.option-one p a,
+.option-two p a,
+.option-three p a,
+.option-four p a,
+.option-five p a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #005BD3;
+    text-decoration: none;
+}
+
+.customize-theme,
+.add-product,
+.name-store,
+.add-domain,
+.setup-payment {
+    border-radius: 6px;
+    background-color: #404040;
+    padding: 6px 12px;
+    align-items: center;
+    border-radius: 6px;
+    border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+    border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+    border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+    background: #404040;
+    box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000;
+    color: #F6F3F6;
+    margin-left: 30px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.option-one-right,
+.option-two-right,
+.option-three-right,
+.option-four-right,
+.option-five-right {
+    display: none;
+}
+
+.import-product {
+    background: none;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #323232;
 }
 
 @media only screen and (min-width: 768px) {
