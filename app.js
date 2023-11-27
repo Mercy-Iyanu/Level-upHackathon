@@ -1,4 +1,9 @@
+function dropdownMenu() {
+    let toggleNotifyMenu = document.querySelector('.bell-icon-alert');
 
+    toggleNotifyMenu.style.display = (toggleNotifyMenu.style.display === 'none') ? 'block' : 'none';
+
+}
 
 function redirectToShopifyPricing() {
     window.location.href = '/shopify.com/pricing'
