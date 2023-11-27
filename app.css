@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 
 body {
     font-family: 'Inter';
@@ -135,14 +136,56 @@ nav {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 }
 
+.user-info-menu a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--font-dark, var(--grey-g-200, #303030));
+}
+
 .user-info-menu-title {
     display: flex;
     padding: 4px 12px 4px 8px;
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
     border-radius: 8px;
     background: var(--states-hover, #F1F1F1);
+}
+
+.david-intials {
+    height: 28px;
+    padding: 9.625px 5.875px 10.375px 6.125px;
+    border-radius: 5.25px;
+    background: #36FBA1;
+}
+
+.david-collection {
+    color: var(--font-dark, var(--grey-g-200, #303030));
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.user-info-menu-title-check,
+.storehouse {
+    border: none;
+    background: none;
+}
+
+.all-stores {
+    display: flex;
+    align-items: center;
+}
+
+.all-stores,
+.help-center,
+.changelog,
+.community-forums,
+.shopify-partner,
+.keyboard-shortcuts,
+.david-michael,
+.manage-account,
+.log-out {
+    padding: 6px;
 }
 
 .extend-trial {
