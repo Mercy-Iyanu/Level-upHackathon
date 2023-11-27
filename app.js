@@ -3,7 +3,10 @@ function dropdownMenu() {
 
     toggleNotifyMenu.style.display = (toggleNotifyMenu.style.display === 'none') ? 'block' : 'none';
 
+
 }
+
+
 
 function userInfoMenu() {
     let toggleUserMenu = document.querySelector('.user-info-menu');

@@ -58,7 +58,6 @@ nav {
     outline: 0px;
     border: none;
     background: none;
-
 }
 
 .bell-icon svg {
@@ -303,7 +302,7 @@ hr {
 .option-three,
 .option-four,
 .option-five {
-    background: #F3F3F3;
+    background: #fff;
     margin-left: 7px;
     margin-right: 7px;
     padding: 20px;
@@ -311,9 +310,14 @@ hr {
     display: flex;
 }
 
+.option-one {
+    background: #F3F3F3;
+}
+
 .hide {
     display: none;
 }
+
 
 .option-one-headline,
 .option-two-headline,
@@ -444,6 +448,7 @@ hr {
     }
 
     .search-icon {
+        display: block;
         position: absolute;
         top: 55%;
         left: 10px;
@@ -454,7 +459,6 @@ hr {
     .notifications {
         display: flex;
         margin-right: 10px;
-
     }
 
     .bell-icon {
@@ -462,10 +466,12 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 32px;
-        width: 32px;
         border-radius: 8px;
         transition: all 300ms;
+    }
+
+    .bell-icon svg {
+        display: block;
     }
 
     .bell-icon:hover,
@@ -488,7 +494,7 @@ hr {
         height: 32px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         font-size: 12px;
         width: 142px;
         border-radius: 8px;
@@ -496,19 +502,23 @@ hr {
     }
 
     .user-intials {
-        width: 28px;
-        height: 28px;
         background-color: #36FBA1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
         border-radius: 8px;
         color: rgba(0, 0, 0, 0.4);
-        margin-right: 1px;
+        height: 6px;
+    }
+
+    .david-info {
+        display: block;
+        color: var(--font-light, #E3E3E3);
+        font-size: 12px;
+        font-weight: 500;
     }
 
     .extend-trial {
         background-color: #1C181D;
+        position: relative;
         margin-top: 15px;
         margin-left: 15em;
         width: 800px;
@@ -531,6 +541,8 @@ hr {
     }
 
     .search-plan-button {
+        position: absolute;
+        right: 60px;
         border-radius: 6px;
         background-color: #fff;
         color: #323232;
@@ -541,8 +553,10 @@ hr {
         cursor: pointer;
     }
 
-    .search-plan svg {
-        top: 0;
+    .extend-trial-headline svg {
+        right: 25px;
+        position: absolute;
+        top: 35%;
     }
 
     main {
@@ -603,12 +617,16 @@ hr {
     .option-three,
     .option-four,
     .option-five {
-        background: #F3F3F3;
+        background: #fff;
         margin-left: 7px;
         margin-right: 7px;
         padding: 20px;
         border-radius: 10px;
         display: flex;
+    }
+
+    .option-one {
+        background: #F3F3F3;
     }
 
     .option-one-headline,
